@@ -1,6 +1,8 @@
 using NUnit.Framework;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class outOfBoundsDetection : MonoBehaviour
@@ -9,6 +11,7 @@ public class outOfBoundsDetection : MonoBehaviour
 
     [Tooltip("List of scripts to run on object death")]
     public teleportTo tp;
+    public colorChangeToRGB colorChange;
 
     [Header("Item List")]
     [Tooltip("List of items to detect if they fall out of bounds")]
@@ -25,19 +28,21 @@ public class outOfBoundsDetection : MonoBehaviour
         {
             if (item != null)
             {
-                if (transform.position.y < deathY)
+                //Debug.Log("Item is at "+item.transform.position.y);
+                if (item.transform.position.y < deathY)
                 {
+                    //Debug.Log("Item is BELOW WORLD LEVEL ");
                     runDeathScripts(item);
                 }
             }
 
         }
-        
-        
     }
 
     void runDeathScripts(GameObject item)
     {
+        //Debug.Log("Running death scripts");
         tp.teleport(item);
+        colorChange.runColorChange(item, UnityEngine.Random.Range(0,256), UnityEngine.Random.Range(0, 256), UnityEngine.Random.Range(0, 256));
     }
 }

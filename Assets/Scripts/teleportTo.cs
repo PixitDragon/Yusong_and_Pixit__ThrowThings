@@ -7,6 +7,6 @@ public class teleportTo : MonoBehaviour
 
     public void teleport(GameObject item)
     {
-        item.transform.position=positionToTpTo;
+        item.transform.position = positionToTpTo;
     }
 }
