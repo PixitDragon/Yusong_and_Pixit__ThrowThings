@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +7,8 @@ public class outOfBoundsDetection : MonoBehaviour
 {
     public float deathY = -2;
 
-    //[Tooltip("List of scripts to run on object death")]
-    //public int numberrrs;//runOnDeath[];
+    [Tooltip("List of scripts to run on object death")]
+    public teleportTo tp;
 
     [Header("Item List")]
     [Tooltip("List of items to detect if they fall out of bounds")]
@@ -26,7 +27,7 @@ public class outOfBoundsDetection : MonoBehaviour
             {
                 if (transform.position.y < deathY)
                 {
-                    runDeathScripts();
+                    runDeathScripts(item);
                 }
             }
 
@@ -35,8 +36,8 @@ public class outOfBoundsDetection : MonoBehaviour
         
     }
 
-    void runDeathScripts()
+    void runDeathScripts(GameObject item)
     {
-
+        tp.teleport(item);
     }
 }
