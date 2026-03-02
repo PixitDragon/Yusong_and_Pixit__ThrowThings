@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toChange: {fileID: 2100000, guid: 8e74fc92cd4ef2c448bf2b36dbbace39, type: 2}
-  newColor: {r: 0.9245283, g: 0.35760048, b: 0.35760048, a: 0}
+  newColor: {r: 0.99371064, g: 0.6593488, b: 0.6593488, a: 0}
 --- !u!1 &908777389
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 0.00001, z: 2}
+  m_LocalScale: {x: 1, y: 0.00001, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
