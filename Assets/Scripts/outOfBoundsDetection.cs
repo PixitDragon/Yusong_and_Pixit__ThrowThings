@@ -18,6 +18,15 @@ public class outOfBoundsDetection : MonoBehaviour
     [Tooltip("List of items to detect if they fall out of bounds")]
     public List<GameObject> itemsList = new List<GameObject>();
 
+    private Rigidbody rb;
+
+    
+    //How Jackson reccomends setting up code communication instead of dragging it in
+    private void Awake()
+    {
+        stopMov = this.gameObject.GetComponent<ceaseMovement>();
+    }
+
     // Update is called once per frame
     void Update()
     {
