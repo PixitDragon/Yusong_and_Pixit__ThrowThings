@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Anchor
+  - Disk1
   layers:
   - Default
   - TransparentFX
