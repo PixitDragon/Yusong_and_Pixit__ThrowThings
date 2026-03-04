@@ -24,6 +24,8 @@ public class outOfBoundsDetection : MonoBehaviour
     //How Jackson reccomends setting up code communication instead of dragging it in
     private void Awake()
     {
+        tp = this.gameObject.GetComponent<teleportTo>();
+        colorChange = gameObject.GetComponent<colorChangeToRGB>();
         stopMov = this.gameObject.GetComponent<ceaseMovement>();
     }
 
