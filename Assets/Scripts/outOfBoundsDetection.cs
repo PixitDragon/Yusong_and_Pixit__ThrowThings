@@ -11,7 +11,7 @@ public class outOfBoundsDetection : MonoBehaviour
 
     [Tooltip("List of scripts to run on object death")]
     public teleportTo tp;
-    public colorChangeToRGB colorChange;
+    //public colorChangeToRGB colorChange;
     public ceaseMovement stopMov;
 
     [Header("Item List")]
@@ -25,7 +25,7 @@ public class outOfBoundsDetection : MonoBehaviour
     private void Awake()
     {
         tp = this.gameObject.GetComponent<teleportTo>();
-        colorChange = gameObject.GetComponent<colorChangeToRGB>();
+        //colorChange = gameObject.GetComponent<colorChangeToRGB>();
         stopMov = this.gameObject.GetComponent<ceaseMovement>();
     }
 
@@ -55,7 +55,7 @@ public class outOfBoundsDetection : MonoBehaviour
     {
         //Debug.Log("Running death scripts");
         tp.teleport(item);
-        colorChange.runColorChange(item, UnityEngine.Random.Range(0,256), UnityEngine.Random.Range(0, 256), UnityEngine.Random.Range(0, 256));
+        //colorChange.runColorChange(item, UnityEngine.Random.Range(0,256), UnityEngine.Random.Range(0, 256), UnityEngine.Random.Range(0, 256));
         stopMov.stopMoving(item);
 
     }

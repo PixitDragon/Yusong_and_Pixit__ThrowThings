@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class colliderHit : MonoBehaviour
 {
+
+    public string diskNumber;
     public pointsManagement pointsAdd;
     Vector3 goalSpawnRegion;
+    public colorChangeToRGB colChng;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Disk1")){
+        if (other.CompareTag(diskNumber)){
             Debug.Log("Disk entered goal!");
             //add point
             pointsAdd.addPoint();
@@ -14,6 +17,8 @@ public class colliderHit : MonoBehaviour
 
             //reset goal
             resetGoalLocation();
+            colChng.runColorChange(UnityEngine.Random.Range(0, 256), UnityEngine.Random.Range(0, 256), UnityEngine.Random.Range(0, 256)); ;
+
         }
     }
     public void resetGoalLocation() {
