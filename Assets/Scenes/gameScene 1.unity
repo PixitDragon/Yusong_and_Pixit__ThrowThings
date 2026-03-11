@@ -2482,7 +2482,7 @@ GameObject:
   - component: {fileID: 1615209570}
   - component: {fileID: 1615209569}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: In-worldScoreboard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
