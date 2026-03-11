@@ -706,7 +706,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 8e74fc92cd4ef2c448bf2b36dbbace39, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4056397237131052848, guid: 13f42e177f824404496bee17313e0d6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1702688128}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3675191726468947338, guid: 13f42e177f824404496bee17313e0d6e, type: 3}
       insertIndex: -1
@@ -985,7 +988,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1702688128}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -1035,7 +1038,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
@@ -1088,6 +1091,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 12.12, y: 1, z: 9.14}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &749300365 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4056397237131052848, guid: 13f42e177f824404496bee17313e0d6e, type: 3}
+  m_PrefabInstance: {fileID: 394159605}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &812249664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1531,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1189275553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1189275554}
+  m_Layer: 0
+  m_Name: Attashpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1189275554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189275553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -12.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1907397278}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1360527127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1767,6 +1806,68 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points: 0
   pointsText: {fileID: 1474201081}
+--- !u!1 &1674171824
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674171825}
+  m_Layer: 0
+  m_Name: Attashpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1674171825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674171824}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -12.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2092255552}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1702688127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1702688128}
+  m_Layer: 0
+  m_Name: Attashpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1702688128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702688127}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -12.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 749300365}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743339074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,7 +2135,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 49b3bebfa1255fd48807938ea6d57ccf, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4056397237131052848, guid: 13f42e177f824404496bee17313e0d6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1189275554}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3675191726468947338, guid: 13f42e177f824404496bee17313e0d6e, type: 3}
       insertIndex: -1
@@ -2151,7 +2255,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1189275554}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -2201,7 +2305,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
@@ -2233,6 +2337,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!4 &1907397278 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4056397237131052848, guid: 13f42e177f824404496bee17313e0d6e, type: 3}
+  m_PrefabInstance: {fileID: 1907397270}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2092255544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2295,7 +2404,10 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 791d90a2d40fc074bad277e775e944bc, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4056397237131052848, guid: 13f42e177f824404496bee17313e0d6e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1674171825}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3675191726468947338, guid: 13f42e177f824404496bee17313e0d6e, type: 3}
       insertIndex: -1
@@ -2412,7 +2524,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 1674171825}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -2462,7 +2574,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
@@ -2494,6 +2606,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!4 &2092255552 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4056397237131052848, guid: 13f42e177f824404496bee17313e0d6e, type: 3}
+  m_PrefabInstance: {fileID: 2092255544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2004402337738964675
 PrefabInstance:
   m_ObjectHideFlags: 0
