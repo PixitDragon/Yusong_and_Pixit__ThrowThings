@@ -22,7 +22,7 @@ public class colliderHit : MonoBehaviour
         }
     }
     public void resetGoalLocation() {
-        goalSpawnRegion = new Vector3(Random.Range(4,-4), Random.Range(1, 2), Random.Range(5, 7));
+        goalSpawnRegion = new Vector3(Random.Range(4,-4), Random.Range(-1, 5), Random.Range(5, 8));
         this.transform.position= goalSpawnRegion;
     }
 
