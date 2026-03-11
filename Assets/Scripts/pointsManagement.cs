@@ -5,7 +5,8 @@ using UnityEngine.SocialPlatforms.Impl;
 public class pointsManagement : MonoBehaviour
 {
     public int points;
-    public TextMeshProUGUI pointsText;
+    public TextMeshProUGUI pointsTextHeadset;
+    public TextMeshPro pointsTextScoreboard;
 
     private void Start()
     {
@@ -21,6 +22,7 @@ public class pointsManagement : MonoBehaviour
 
     private void UpdatePointsText()
     {
-        pointsText.text = "Points: " + points;
+        pointsTextHeadset.text = "Points: " + points;
+        pointsTextScoreboard.text = "Points: " + points;
     }
 }
